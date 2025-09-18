@@ -1,4 +1,4 @@
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://voosh-chatbot-backend.onrender.com';
 
 export const sendMessage = async (message, sessionId) => {
   const response = await fetch(`${API_BASE_URL}/api/chat`, {
